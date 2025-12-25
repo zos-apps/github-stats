@@ -1,4 +1,4 @@
-# 📊 GitHubStats
+# 📊 GitHub Stats
 
 > View GitHub contribution statistics
 
@@ -13,10 +13,27 @@ npm install github:zos-apps/github-stats
 ## Usage
 
 ```tsx
-import ZGitHubStats from '@zos-apps/github-stats';
+import App from '@zos-apps/github-stats';
 
-function App() {
-  return <ZGitHubStats />;
+function MyApp() {
+  return <App />;
+}
+```
+
+## Package Spec
+
+App metadata is defined in `package.json` under the `zos` field:
+
+```json
+{
+  "zos": {
+    "id": "ai.hanzo.githubstats",
+    "name": "GitHub Stats",
+    "icon": "📊",
+    "category": "developer",
+    "permissions": ["network"],
+    "installable": true
+  }
 }
 ```
 
