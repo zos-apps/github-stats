@@ -1,8 +1,12 @@
 # 📊 GitHub Stats
 
+[![Version](https://img.shields.io/badge/version-4.2.0-blue.svg)](https://github.com/zos-apps/github-stats/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/docs-online-purple.svg)](https://zos-apps.github.io/github-stats)
+
 > View GitHub contribution statistics
 
-Part of the [zOS Apps](https://github.com/zos-apps) ecosystem.
+**[Documentation](https://zos-apps.github.io/github-stats)** • **[App Store](https://zos-apps.github.io/app-store)** • **[All Apps](https://github.com/zos-apps)**
 
 ## Installation
 
@@ -10,37 +14,53 @@ Part of the [zOS Apps](https://github.com/zos-apps) ecosystem.
 npm install github:zos-apps/github-stats
 ```
 
+Or install via the [zOS App Store](https://zos-apps.github.io/app-store).
+
 ## Usage
 
 ```tsx
-import App from '@zos-apps/github-stats';
+import GitHub Stats from '@zos-apps/github-stats';
 
-function MyApp() {
-  return <App />;
+function App() {
+  return <GitHub Stats />;
 }
 ```
 
-## Package Spec
+## Features
 
-App metadata is defined in `package.json` under the `zos` field:
+- Native zOS window integration
+- Dark mode support
+- Keyboard shortcuts
+- Context menu actions
+- Menu bar integration
 
-```json
-{
-  "zos": {
-    "id": "ai.hanzo.githubstats",
-    "name": "GitHub Stats",
-    "icon": "📊",
-    "category": "developer",
-    "permissions": ["network"],
-    "installable": true
-  }
-}
-```
+## Keyboard Shortcuts
 
-## Version
+No shortcuts defined.
 
-v4.2.0
+## Context Menu
+
+Right-click the app icon for:
+- **Open** - Launch the app
+- **Open in New Window** - Open a new instance
+- **Get Info** - View app details
+- **Show in Finder** - Locate app files
+
+## Menu Bar
+
+When active, adds menus: GitHub Stats, File, Edit, View, Window, Help
+
+## Permissions
+
+- `network`
+
+## Links
+
+- [Documentation](https://zos-apps.github.io/github-stats)
+- [GitHub Repository](https://github.com/zos-apps/github-stats)
+- [Report Issues](https://github.com/zos-apps/github-stats/issues)
+- [All zOS Apps](https://github.com/zos-apps)
 
 ## License
 
-MIT © Hanzo AI
+MIT © [Hanzo AI](https://hanzo.ai)
